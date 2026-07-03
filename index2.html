@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xona Lux</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto  flex items-center justify-between">
+
+    <div class="text-2xl font-bold text-green-700"> Xona Lux</div>
+
+    <div class="hidden md:flex gap-6 text-gray-600">
+      <a class="text-green-600 " href="./index.html">Харид</a>
+      <a href="./index2.html">Иҷора</a>
+      <a href="./index3.html">Квартира</a>
+      <a href="./index4.html">Барои бизнес</a>
+
+    </div>
+<button id="menuBtn" class="md:hidden text-2xl">
+    ☰
+</button>
+<div id="menu" class="hidden bg-white p-4">
+
+    <a href="index.html" class="block ">Главная</a>
+
+    <a href="./index2.html" class="block ">Аренда</a>
+
+    <a href="./index3.html" class="block ">Продажа</a>
+
+    <a href="./index4.html" class="block ">Земля</a>
+
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex bg-gray-100  rounded-full">
+         <input class="b ml-2  w-32" placeholder="Ҷустуҷӯ...">
+      </div>
+
+      <div class="text-xl flex gap-3 text-gray-600">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<div class="max-w-7xl mx-auto  grid lg:grid-cols-4 gap-6">
+
+  <aside class="bg-white p-5 rounded-2xl shadow h-fit">
+
+    <h2 class="text-xl font-bold mb-5">Филтрҳо</h2>
+
+    <div class="mb-4">
+      <label class="text-sm text-gray-500">Навъи амвол</label>
+      <select class="w-full border p-3 rounded-xl mt-2">
+        <option>Хона</option>
+        <option>Квартира</option>
+        <option>Вилла</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label class="text-sm text-gray-500">Нарх</label>
+      <div class="flex gap-2 mt-2">
+        <input class="w-full border p-2 rounded-xl" placeholder="Аз">
+        <input class="w-full border p-2 rounded-xl" placeholder="То">
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <label class="text-sm text-gray-500">Утоқҳо</label>
+      <div class="flex gap-2 mt-2">
+        <button class="border rounded-full">1</button>
+        <button class="border  rounded-full">2</button>
+        <button class="bg-green-600 text-white  rounded-full">3+</button>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <label class="text-sm text-gray-500">Майдони (м²)</label>
+      <input type="range" class="w-full mt-2">
+    </div>
+
+    <button class="w-full bg-green-600 text-white  rounded-xl">
+      Натиҷаҳо
+    </button>
+
+    <button class="w-full mt-2 text-sm text-gray-500">
+      Тоза кардан
+    </button>
+
+  </aside>
+
+   <main class="lg:col-span-3">
+
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h1 class="text-2xl font-bold">Фурӯши хонаҳо</h1>
+        <p class="text-gray-500 text-sm">124 амвол ёфт шуд</p>
+      </div>
+
+      <select class="border p-2 rounded-xl">
+        <option>Андоз аз нав</option>
+      </select>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="bg-white rounded-2xl  shadow hover:shadow-lg transition">
+
+        <img class="h-48 w-full object-cover"
+        src="./images/image copy 10.png">
+
+        <div class="p-5">
+          <div class="text-green-600 font-bold text-xl">1,250,000 сомн.</div>
+          <h3 class=" mt-1">Виллаи замонавӣ</h3>
+          <p class="text-gray-500 text-sm">Душанбе, Варзоб</p>
+
+          <div class="flex justify-between text-sm text-gray-600 mt-3">
+            <span>5 ҳуҷра</span>
+            <span>280 м²</span>
+            <span>6 сола</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl  shadow hover:shadow-lg ">
+
+        <img class="h-48 w-full "
+        src="./images/image copy 9.png">
+
+        <div class="p-5">
+          <div class="text-green-600 font-bold text-xl">890,000 сомн.</div>
+          <h3 class=" mt-1">Хонаи зебо</h3>
+          <p class="text-gray-500 text-sm">Шаҳри Душанбе</p>
+
+          <div class="flex justify-between text-sm text-gray-600 mt-3">
+            <span>4 ҳуҷра</span>
+            <span>195 м²</span>
+            <span>4 сола</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+  </main>
+</div>
+  <main class="lg:col-span-3">
+
+
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="bg-white rounded-2xl  shadow hover:shadow-lg ">
+
+        <img class="h-48 w-full object-cover"
+        src="images/image copy 6.png">
+
+        <div class="p-5">
+          <div class="text-green-600 font-bold text-xl">1,250,000 сомн.</div>
+          <h3 class=" mt-1">Виллаи замонавӣ</h3>
+          <p class="text-gray-500 text-sm">Душанбе, Варзоб</p>
+
+          <div class="flex justify-between text-sm text-gray-600 mt-3">
+            <span>5 ҳуҷра</span>
+            <span>280 м²</span>
+            <span>6 сола</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl  shadow hover:shadow-lg ">
+
+        <img class="h-48 w-full object-cover"
+        src="./images/image copy 8.png">
+
+        <div class="p-5">
+          <div class="text-green-600 font-bold text-xl">890,000 сомн.</div>
+          <h3 class=" mt-1">Хонаи зебо</h3>
+          <p class="text-gray-500 text-sm">Шаҳри Душанбе</p>
+
+          <div class="flex justify-between text-sm text-gray-600 mt-3">
+            <span>4 ҳуҷра</span>
+            <span>195 м²</span>
+            <span>4 сола</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center mt-10 gap-2">
+      <button class=" border rounded">‹</button>
+      <button class=" bg-green-600 text-white rounded">1</button>
+      <button class=" border rounded">2</button>
+      <button class=" border rounded">3</button>
+      <button class=" border rounded">›</button>
+    </div>
+
+  </main>
+</div>
+
+<footer class="bg-slate-900 text-white mt-10">
+  <div class="max-w-7xl mx-auto  grid md:grid-cols-4 gap-6">
+
+    <div>
+      <h2 class="font-bold text-xl">Estate Elite</h2>
+      <p class="text-gray-400 text-sm mt-2">
+        Беҳтарин платформаи амвол.
+      </p>
+    </div>
+
+    <div>
+      <h3>Пайвандҳо</h3>
+      <p class="text-gray-400 text-sm mt-2">Харид / Иҷора / Тамос</p>
+    </div>
+
+    <div>
+      <h3 >Тамос</h3>
+      <p class="text-gray-400 text-sm mt-2">+992 900 00 00</p>
+    </div>
+
+    <div>
+      <h3 >Email</h3>
+      <input class="mt-2 w-full p-2 rounded text-black" placeholder="Email">
+    </div>
+
+  </div>
+
+  <div class="text-center text-gray-500 text-sm  border-t border-gray-700">
+    © 2024 Estate Elite
+  </div>
+</footer>
+<script>
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+
+btn.onclick = () => {
+    menu.classList.toggle("hidden");
+};
+</script>
+</body>
+</html>
