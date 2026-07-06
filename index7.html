@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="max-w-7xl mx-auto px-6 py-10">
+ 
+    <div class="mb-10">
+        <h1 class="text-4xl font-bold text-slate-900">
+            Guest Reservation
+        </h1>
+
+        <p class="mt-2 text-gray-500 max-w-2xl">
+            Complete your reservation by reviewing your selected properties and
+            filling in your booking details.
+        </p>
+    </div>
+ 
+    <div class="grid lg:grid-cols-3 gap-8">
+ 
+        <div class="lg:col-span-2">
+
+            <div class="bg-white border rounded-xl">
+
+                <div class="border-b px-6 py-4">
+                    <h2 class="  text-lg">
+                        Selected Properties
+                    </h2>
+                </div>
+ 
+                <div class="p-6 flex gap-5 border-b">
+
+                    <img src= "./images/image copy 7.png"
+                        class="w-36 h-24 rounded-lg object-cover">
+
+                    <div class="flex-1">
+
+                        <h3 class="  text-lg">
+                            Mountain View Villa
+                        </h3>
+
+                        <p class="text-gray-500 text-sm">
+                            2 Guests • 3 Nights
+                        </p>
+
+                        <div class="mt-3   text-blue-900">
+                            $350 / night
+                        </div>
+
+                    </div>
+
+                    <button class="text-gray-400 hover:text-red-500">
+                        ✕
+                    </button>
+
+                </div>
+ 
+                <div class="p-6 flex gap-5">
+
+                    <img src="./images/image copy 12.png"
+                        class="w-36 h-24 rounded-lg object-cover">
+
+                    <div class="flex-1">
+
+                        <h3 class="text-lg">
+                            Downtown Apartment
+                        </h3>
+
+                        <p class="text-gray-500 text-sm">
+                            2 Guests • 2 Nights
+                        </p>
+
+                        <div class="mt-3    text-blue-900">
+                            $220 / night
+                        </div>
+
+                    </div>
+
+                    <button class="text-gray-400 hover:text-red-500">
+                        ✕
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+ 
+        <div>
+
+            <div class="bg-white border rounded-xl p-6 sticky top-8">
+
+                <h2 class=" text-xl mb-6">
+                    Reservation Details
+                </h2>
+
+                <div  >
+
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        class="w-full border rounded-lg px-4 py-3">
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        class="w-full border rounded-lg px-4 py-3">
+
+                    <input
+                        type="date"
+                        class="w-full border rounded-lg px-4 py-3">
+
+                    <textarea
+                        rows="4"
+                        placeholder="Special Requests"
+                        class="w-full border rounded-lg px-4 py-3"></textarea>
+
+                </div>
+
+                <button
+                    class="w-full mt-6 bg-blue-900 hover:bg-blue-800 text-white py-3 rounded-lg font-semibold">
+                    Confirm Reservation
+                </button>
+
+                <div class="flex justify-between mt-6 pt-6 border-t">
+
+                    <span  >
+                        Total
+                    </span>
+
+                    <span class="text-xl font-bold text-blue-900">
+                        $1,260
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+ 
+    <section class="mt-16">
+
+        <h2 class="text-2xl font-bold mb-6">
+            Recommended Properties
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-white border rounded-xl overflow-hidden">
+                <img src="./images/image copy 6.png"
+                    class="h-56 w-full object-cover">
+                <div class="p-5">
+                    <h3 >Luxury Waterfront Villa</h3>
+                    <p class="text-gray-500 text-sm mt-2">$450 / night</p>
+                </div>
+            </div>
+
+            <div class="bg-white border rounded-xl overflow-hidden">
+                <img src="./images/image copy 11.png"
+                    class="h-56 w-full object-cover">
+                <div class="p-5">
+                    <h3  >Modern Loft Apartment</h3>
+                    <p class="text-gray-500 text-sm mt-2">$260 / night</p>
+                </div>
+            </div>
+
+            <div class="bg-white border rounded-xl overflow-hidden">
+                <img src="./images/image copy 9.png"
+                    class="h-56 w-full object-cover">
+                <div class="p-5">
+                    <h3  >Forest Cabin Retreat</h3>
+                    <p class="text-gray-500 text-sm mt-2">$310 / night</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+<footer class="bg-white border-t mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+       <div>
+        <h2 class="text-2xl font-bold text-blue-900">
+          RealEstate
+        </h2>
+
+        <p class="mt-4 text-gray-600 ">
+          Find your dream home with the best properties available in your
+          favorite locations.
+        </p>
+
+        <div class="flex gap-4 mt-6">
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-900 hover:text-white">
+            FB
+          </a>
+
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-900 hover:text-white">
+            IG
+          </a>
+
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-900 hover:text-white">
+            TW
+          </a>
+        </div>
+      </div>
+
+       <div>
+        <h3 class="  text-lg mb-5">
+          Quick Links
+        </h3>
+
+        <ul class="  text-gray-600">
+          <li><a href="#" class="hover:text-blue-900">Home</a></li>
+          <li><a href="#" class="hover:text-blue-900">Properties</a></li>
+          <li><a href="#" class="hover:text-blue-900">Agents</a></li>
+          <li><a href="#" class="hover:text-blue-900">About Us</a></li>
+          <li><a href="#" class="hover:text-blue-900">Contact</a></li>
+        </ul>
+      </div>
+
+       <div>
+        <h3 class="  text-lg mb-5">
+          Contact
+        </h3>
+
+        <ul class="  text-gray-600">
+          <li> 123 Main Street, New York</li>
+          <li> +1 (555) 123-4567</li>
+          <li> info@realestate.com</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class=" text-lg mb-5">
+          Newsletter
+        </h3>
+
+        <p class="text-gray-600 mb-4">
+          Subscribe to receive the latest property updates.
+        </p>
+
+        <form >
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full border rounded-lg px-4 py-3  focus:ring-blue-900"
+          />
+
+          <button
+            class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+ 
+    <div class="border-t mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+
+      <p>
+        © 2025 RealEstate. All rights reserved.
+      </p>
+
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-blue-900">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-900">Terms & Conditions</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
