@@ -15,7 +15,7 @@
     <div class="font-bold text-xl">Xona Lux</div>
 
 
-     <nav class="hidden md:flex gap-8 text-gray-600">
+<nav class="hidden md:flex gap-8 text-gray-600">
       <a href="index.html">Главная</a>
       <a href="./index2.html">Объект</a>
       <a href="./index3.html">Контакты</a>
@@ -24,10 +24,64 @@
        <a href="./index6.html">Катлаван</a>
       <a href="./index7.html">Коробка</a>
        <a href="./index8.html">Готовые</a>
+       <a href="./index9.html">Под заказ</a>
+       <a href="./index10.html">Аренда</a>
     </nav>
 
     
 </div>
+
+     <button id="menuBtn" class="md:hidden text-2xl">
+    ☰
+</button>
+<div id="menu" class="hidden fixed top-0 right-0 h-full w-64 bg-[#fff] text-white z-50 shadow-2xl overflow-y-auto">
+
+    <div class="flex justify-between items-center p-5 border-b border-gray-700">
+        <h1 class="text-3xl font-bold text-green-400">Xona Lux</h1>
+       
+    </div>
+
+    <a href="index.html" class="flex items-center gap-3 px-6 py-4 bg-slate-800 hover:bg-slate-700 transition">
+         <span>Главная</span>
+    </a>
+
+    <a href="index2.html" class="flex items-center  text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Объект</span>
+    </a>
+
+    <a href="index3.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Контакты</span>
+    </a>
+
+    <a href="index4.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Инфор</span>
+    </a>
+
+    <a href="index5.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Реад</span>
+    </a>
+
+    <a href="index6.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Катлаван</span>
+    </a>
+
+    <a href="index7.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Коробка</span>
+    </a>
+
+    <a href="index8.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Готовые</span>
+    </a>
+
+        <a href="index9.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Под заказ</span>
+    </a>
+    
+    <a href="index10.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Аренда</span>
+    </a>
+</div>
+
  
 <div class="p-6">
     <h1 class="text-2xl font-bold">Аренда недвижимости</h1>
@@ -50,10 +104,10 @@
 
 <div class="flex gap-2 p-6 flex-wrap">
 
-    <button class="bg-green-200  rounded">Дом</button>
-    <button class="bg-white   rounded shadow">Квартира</button>
-    <button class="bg-white   rounded shadow">Офис</button>
-    <button class="bg-white   rounded shadow">Гараж</button>
+    <button class="bg-green-200  rounded py-1 px-6">Дом</button>
+    <button class="bg-white   rounded shadow py-1 px-6">Квартира</button>
+    <button class="bg-white   rounded shadow py-1 px-6">Офис</button>
+    <button class="bg-white   rounded shadow py-1 px-6">Гараж</button>
 
 </div>
 
@@ -67,7 +121,7 @@
     <div class="p-4">
 
         <div class="flex justify-between">
-            <span class="bg-green-500 text-white ">VIP</span>
+            <span class="bg-green-500 text-white py-1 px-6">VIP</span>
             
         </div>
 
@@ -96,7 +150,7 @@
     <div class="p-4">
 
         <div class="flex justify-between">
-            <span class="bg-yellow-400  ">NEW</span>
+            <span class="bg-yellow-400  py-1 px-6">NEW</span>
             
         </div>
 
@@ -125,7 +179,7 @@
     <div class="p-4">
 
         <div class="flex justify-between">
-            <span class="bg-green-500 text-white  ">VIP</span>
+            <span class="bg-green-500 text-white  py-1 px-6">VIP</span>
            
         </div>
 
@@ -160,7 +214,7 @@
     <div class="grid md:grid-cols-3 gap-6">
 
         <div>
-            <h2 class="font-bold">Estate Elite</h2>
+            <h2 class="font-bold">Xona Lux</h2>
             <p class="text-gray-400">Недвижимость</p>
         </div>
 
@@ -172,13 +226,21 @@
 
         <div>
             <input class="p-2 text-black" placeholder="Email">
-            <button class="bg-green-600 ">OK</button>
+            <button class="bg-green-600 py-2 px-3">OK</button>
         </div>
 
     </div>
 
 </div>
 
+<script>
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+const closeBtn = document.getElementById("closeBtn");
 
+btn.onclick = () => menu.classList.remove("hidden");
+closeBtn.onclick = () => menu.classList.add("hidden");
+</script>
+</script>
 </body>
 </html>

@@ -10,11 +10,10 @@
 <body class="bg-gray-100">
 
 <header class="bg-white border-b">
-  <div class="max-w-7xl mx-auto h-20  flex items-center justify-between">
+  <div class=" mx-auto h-20  flex items-center justify-between">
 
     <div class="text-2xl font-bold text-blue-600">ESTATE</div>
-
-    <nav class="hidden md:flex gap-8 text-gray-600">
+<nav class="hidden md:flex gap-8 text-gray-600">
       <a href="index.html">Главная</a>
       <a href="./index2.html">Объект</a>
       <a href="./index3.html">Контакты</a>
@@ -23,8 +22,61 @@
        <a href="./index6.html">Катлаван</a>
       <a href="./index7.html">Коробка</a>
        <a href="./index8.html">Готовые</a>
+       <a href="./index9.html">Под заказ</a>
+       <a href="./index10.html">Аренда</a>
     </nav>
+  
 
+         <button id="menuBtn" class="md:hidden text-2xl">
+    ☰
+</button>
+<div id="menu" class="hidden fixed top-0 right-0 h-full w-64 bg-[#fff] text-white z-50 shadow-2xl overflow-y-auto">
+
+    <div class="flex justify-between items-center p-5 border-b border-gray-700">
+        <h1 class="text-3xl font-bold text-green-400">Xona Lux</h1>
+       
+    </div>
+
+    <a href="index.html" class="flex items-center gap-3 px-6 py-4 bg-slate-800 hover:bg-slate-700 transition">
+         <span>Главная</span>
+    </a>
+
+    <a href="index2.html" class="flex items-center  text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Объект</span>
+    </a>
+
+    <a href="index3.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Контакты</span>
+    </a>
+
+    <a href="index4.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Инфор</span>
+    </a>
+
+    <a href="index5.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Реад</span>
+    </a>
+
+    <a href="index6.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Катлаван</span>
+    </a>
+
+    <a href="index7.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Коробка</span>
+    </a>
+
+    <a href="index8.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Готовые</span>
+    </a>
+
+        <a href="index9.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Под заказ</span>
+    </a>
+    
+    <a href="index10.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Аренда</span>
+    </a>
+</div>
     <button class="bg-blue-600 text-white px-5 py-2 rounded-xl">
       Войти
     </button>
@@ -32,7 +84,7 @@
   </div>
 </header>
 
-<main class="max-w-7xl mx-auto px-6 py-10">
+<main class=" mx-auto px-6 py-10">
 
 <div class="grid lg:grid-cols-3 gap-8">
 
@@ -150,7 +202,7 @@
 
 <section class="mt-6 bg-white rounded-2xl p-8 shadow">
 
-    <h2 class="text-2xl font-bold mb-4">Video Tour</h2>
+    <h2 class="text-2xl font-bold mb-4"> Tour</h2>
 
     <div class="relative w-full h-[400px] rounded-2xl overflow-hidden bg-black">
 
@@ -160,9 +212,7 @@
         >
 
         <div class="absolute  flex items-center justify-center">
-            <button class="bg-white text-black px-6 py-3 rounded-full d">
-                 Play Video
-            </button>
+            
         </div>
 
     </div>
@@ -175,20 +225,20 @@
 
     <div>
 
-        <div class="border-b pb-4">
+        <div class=" pb-4">
             <div class="flex justify-between">
-                <p >Alex Johnson</p>
-                <span class="text-yellow-500">★★★★★</span>
+                <p >Dilshod Nazarov</p>
+                <span class="text-yellow-500"></span>
             </div>
             <p class="text-gray-600 mt-2">
                 Amazing property, everything is exactly as described.
             </p>
         </div>
 
-        <div class="border-b pb-4">
+        <div class=" pb-4">
             <div class="flex justify-between">
                 <p >Maria Smith</p>
-                <span class="text-yellow-500">★★★★★</span>
+                <span class="text-yellow-500"></span>
             </div>
             <p class="text-gray-600 mt-2">
                 Great location and beautiful interior design.
@@ -198,9 +248,9 @@
     </div>
 
 </section>
-<footer class="mt-10 bg-white border-t">
+<footer class="mt-10 bg-white ">
 
-    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-8">
+    <div class=" px-6 py-10 grid md:grid-cols-4 gap-8">
 
         <div>
             <h3 class="font-bold text-xl text-blue-600">Estate</h3>
@@ -234,10 +284,20 @@
 
     </div>
 
-    <div class="text-center text-gray-400 py-4 border-t">
+    <div class="text-center text-gray-400 py-4 ">
         © 2026 Estate. All rights reserved.
     </div>
 
 </footer>
+
+<script>
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+const closeBtn = document.getElementById("closeBtn");
+
+btn.onclick = () => menu.classList.remove("hidden");
+closeBtn.onclick = () => menu.classList.add("hidden");
+</script>
+</script>
 </body>
 </html>
