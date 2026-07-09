@@ -23,21 +23,62 @@
        <a href="./index6.html">Катлаван</a>
       <a href="./index7.html">Коробка</a>
        <a href="./index8.html">Готовые</a>
+       <a href="./index9.html">Под заказ</a>
+       <a href="./index10.html">Аренда</a>
     </nav>
-<button id="menuBtn" class="md:hidden text-2xl">
+
+     <button id="menuBtn" class="md:hidden text-2xl">
     ☰
 </button>
-<div id="menu" class="hidden bg-white p-4">
+<div id="menu" class="hidden fixed top-0 right-0 h-full w-64 bg-[#fff] text-white z-50 shadow-2xl overflow-y-auto">
+
+    <div class="flex justify-between items-center p-5 border-b border-gray-700">
+        <h1 class="text-3xl font-bold text-green-400">Xona Lux</h1>
+       
+    </div>
+
+    <a href="index.html" class="flex items-center gap-3 px-6 py-4 bg-slate-800 hover:bg-slate-700 transition">
+         <span>Главная</span>
+    </a>
+
+    <a href="index2.html" class="flex items-center  text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Объект</span>
+    </a>
+
+    <a href="index3.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Контакты</span>
+    </a>
+
+    <a href="index4.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Инфор</span>
+    </a>
+
+    <a href="index5.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Реад</span>
+    </a>
+
+    <a href="index6.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Катлаван</span>
+    </a>
+
+    <a href="index7.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Коробка</span>
+    </a>
+
+    <a href="index8.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Готовые</span>
+    </a>
+
+        <a href="index9.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Под заказ</span>
+    </a>
+    
+    <a href="index10.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Аренда</span>
+    </a>
+</div>
 
 
-
-    <a href="index.html" class="block ">Главная</a>
-
-    <a href="./index2.html" class="block ">Аренда</a>
-
-    <a href="./index3.html" class="block ">Продажа</a>
-
-    <a href="./index4.html" class="block ">Земля</a>
 
     <div class="flex items-center gap-4">
       <div class="hidden md:flex bg-gray-100  rounded-full">
@@ -78,9 +119,9 @@
     <div class="mb-4">
       <label class="text-sm text-gray-500">Утоқҳо</label>
       <div class="flex gap-2 mt-2">
-        <button class="border rounded-full">1</button>
-        <button class="border  rounded-full">2</button>
-        <button class="bg-green-600 text-white  rounded-full">3+</button>
+        <button class="border rounded-full py-1 px-3">1</button>
+        <button class="border  rounded-full py-1 px-3">2</button>
+        <button class="bg-green-600 text-white  rounded-full py-1 px-3">3+</button>
       </div>
     </div>
 
@@ -201,11 +242,11 @@
     </div>
 
     <div class="flex justify-center mt-10 gap-2">
-      <button class=" border rounded">‹</button>
-      <button class=" bg-green-600 text-white rounded">1</button>
-      <button class=" border rounded">2</button>
-      <button class=" border rounded">3</button>
-      <button class=" border rounded">›</button>
+      <button class=" border rounded py-1 px-3">‹</button>
+      <button class=" bg-green-600 text-white rounded py-1 px-3">1</button>
+      <button class=" border rounded py-1 px-3">2</button>
+      <button class=" border rounded py-1 px-3">3</button>
+      <button class=" border rounded py-1 px-3">›</button>
     </div>
 
   </main>
@@ -245,10 +286,11 @@
 <script>
 const btn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
+const closeBtn = document.getElementById("closeBtn");
 
-btn.onclick = () => {
-    menu.classList.toggle("hidden");
-};
+btn.onclick = () => menu.classList.remove("hidden");
+closeBtn.onclick = () => menu.classList.add("hidden");
+</script>
 </script>
 </body>
 </html>

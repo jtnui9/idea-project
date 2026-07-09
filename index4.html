@@ -16,7 +16,7 @@
       Xona Lux
     </div>
 
-    <nav class="hidden md:flex gap-8 text-gray-600">
+  <nav class="hidden md:flex gap-8 text-gray-600">
       <a href="index.html">Главная</a>
       <a href="./index2.html">Объект</a>
       <a href="./index3.html">Контакты</a>
@@ -25,9 +25,62 @@
        <a href="./index6.html">Катлаван</a>
       <a href="./index7.html">Коробка</a>
        <a href="./index8.html">Готовые</a>
+       <a href="./index9.html">Под заказ</a>
+       <a href="./index10.html">Аренда</a>
     </nav>
 
     
+</div>
+
+     <button id="menuBtn" class="md:hidden text-2xl">
+    ☰
+</button>
+<div id="menu" class="hidden fixed top-0 right-0 h-full w-64 bg-[#fff] text-white z-50 shadow-2xl overflow-y-auto">
+
+    <div class="flex justify-between items-center p-5 border-b border-gray-700">
+        <h1 class="text-3xl font-bold text-green-400">Xona Lux</h1>
+       
+    </div>
+
+    <a href="index.html" class="flex items-center gap-3 px-6 py-4 bg-slate-800 hover:bg-slate-700 transition">
+         <span>Главная</span>
+    </a>
+
+    <a href="index2.html" class="flex items-center  text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Объект</span>
+    </a>
+
+    <a href="index3.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Контакты</span>
+    </a>
+
+    <a href="index4.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Инфор</span>
+    </a>
+
+    <a href="index5.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Реад</span>
+    </a>
+
+    <a href="index6.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Катлаван</span>
+    </a>
+
+    <a href="index7.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Коробка</span>
+    </a>
+
+    <a href="index8.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Готовые</span>
+    </a>
+
+        <a href="index9.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Под заказ</span>
+    </a>
+    
+    <a href="index10.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Аренда</span>
+    </a>
 </div>
 
 <div class="p-6">
@@ -56,19 +109,19 @@
 
 <div class="flex gap-2 p-6 flex-wrap">
 
-    <button class="bg-green-200   rounded">
+    <button class="bg-green-200  py-1 px-6 rounded">
         Электроника рядом
     </button>
 
-    <button class="bg-white   rounded shadow">
+    <button class="bg-white  py-1 px-6 rounded shadow">
         Без дороги
     </button>
 
-    <button class="bg-white   rounded shadow">
+    <button class="bg-white  py-1 px-6 rounded shadow">
         С водой
     </button>
 
-    <button class="bg-white   rounded shadow">
+    <button class="bg-white  py-1 px-6 rounded shadow">
         Коммерческая
     </button>
 
@@ -82,7 +135,7 @@
 
         <div class="p-4">
 
-            <span class="bg-green-500 text-white   text-sm">
+            <span class="bg-green-500 text-white py-1 px-6  text-sm">
                 VIP
             </span>
 
@@ -116,7 +169,7 @@
 
         <div class="p-4">
 
-            <span class="bg-orange-500 text-white px-2 text-sm">
+            <span class="bg-orange-500 text-white py-1 px-6 text-sm">
                 HOT
             </span>
 
@@ -150,7 +203,7 @@
 
         <div class="p-4">
 
-            <span class="bg-blue-500 text-white   text-sm">
+            <span class="bg-blue-500 text-white  py-1 px-6 text-sm">
                 NEW
             </span>
 
@@ -192,11 +245,11 @@
 
     <div class="mt-5 flex justify-center gap-4">
 
-        <button class="bg-green-500   rounded">
+        <button class="bg-green-500 py-1 px-6  rounded">
             Оформить заявку
         </button>
 
-        <button class="border  rounded">
+        <button class="border py-1 px-6 rounded">
             Связаться
         </button>
 
@@ -232,6 +285,14 @@
 
 </div>
 
+<script>
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+const closeBtn = document.getElementById("closeBtn");
 
+btn.onclick = () => menu.classList.remove("hidden");
+closeBtn.onclick = () => menu.classList.add("hidden");
+</script>
+</script>
 </body>
 </html>

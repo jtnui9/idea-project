@@ -14,20 +14,55 @@
             <a href="#" class="text-2xl font-bold text-green-600">
                 Xona<span class="text-black"> Lux</span>
             </a>
-<button id="menuBtn" class="md:hidden text-2xl">
+            <button id="menuBtn" class="md:hidden text-2xl">
     ☰
 </button>
-<div id="menu" class="hidden bg-white p-4">
+<div id="menu" class="hidden fixed top-0 right-0 h-full w-64 bg-[#fff] text-white z-50 shadow-2xl overflow-y-auto">
 
-    <a href="index.html" class="block ">Главная</a>
+    <div class="flex justify-between items-center p-5 border-b border-gray-700">
+        <h1 class="text-3xl font-bold text-green-400">Xona Lux</h1>
+       
+    </div>
 
-    <a href="./index2.html" class="block">Аренда</a>
+    <a href="index.html" class="flex items-center gap-3 px-6 py-4 bg-slate-800 hover:bg-slate-700 transition">
+         <span>Главная</span>
+    </a>
 
-    <a href="./index3.html" class="block ">Продажа</a>
+    <a href="index2.html" class="flex items-center  text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Объект</span>
+    </a>
 
-    <a href="./index4.html" class="block ">Земля</a>
+    <a href="index3.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Контакты</span>
+    </a>
 
+    <a href="index4.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Инфор</span>
+    </a>
 
+    <a href="index5.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Реад</span>
+    </a>
+
+    <a href="index6.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Катлаван</span>
+    </a>
+
+    <a href="index7.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Коробка</span>
+    </a>
+
+    <a href="index8.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Готовые</span>
+    </a>
+    
+    <a href="index9.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Под заказ</span>
+    </a>
+    
+    <a href="index10.html" class="flex items-center text-black gap-3 px-6 py-4 hover:bg-slate-800 transition">
+         <span>Аренда</span>
+    </a>
 
 </div>
           <nav class="hidden md:flex gap-8 text-gray-600">
@@ -39,6 +74,8 @@
        <a href="./index6.html">Катлаван</a>
       <a href="./index7.html">Коробка</a>
        <a href="./index8.html">Готовые</a>
+       <a href="./index9.html">Под заказ</a>
+       <a href="./index10.html">Аренда</a>
     </nav>
 
             <div class="flex items-center gap-4">
@@ -544,10 +581,11 @@
 <script>
 const btn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
+const closeBtn = document.getElementById("closeBtn");
 
-btn.onclick = () => {
-    menu.classList.toggle("hidden");
-};
+btn.onclick = () => menu.classList.remove("hidden");
+closeBtn.onclick = () => menu.classList.add("hidden");
+</script>
 </script>
 </body>
 </html>
